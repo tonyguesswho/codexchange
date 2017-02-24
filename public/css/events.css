@@ -1,0 +1,83 @@
+body{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	font-family: roboto,arial;
+
+}
+.navbar-static-top{
+	margin-bottom: 0px;
+}
+.navbar-static-top h3{
+	width: 100px;
+}
+.navbar-static-top ul{
+	float: right;
+}
+.navbar-static-top input{
+	width: 200px;
+}
+.events{
+	width: 100%;
+	background-color: #f4f7fb;
+	padding-top: 25px;
+}
+#header_navbar{
+	float: right;
+	width: 600px;
+	height: 20px;
+}
+#header_navbar ul li:nth-child(4){
+	border: 0px solid #169bd5;
+	border-radius: 4px;
+	margin-left: 4px;
+	height: 31px;
+}
+.events .thumbnail{
+	width: 495px;
+	
+	margin: 15px;
+	border: 0px;
+	
+	margin-top: 5px;
+	border-radius: 4px;
+}
+#allevents{
+	padding-left: 10%;
+}
+.L-events button{
+	margin-left: 5%;
+}
+.c-events .thumbnail{
+	width: 300px;
+	margin-left: 18%;
+	border-radius: 5px;
+}
+.navbar-inverse{
+	
+	height: 80px;
+	background-color: #000033;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.navbar-inverse .navbar-header{
+	margin-top: 11px;
+}
+.c-events ul {
+	margin:0px;
+	padding-right: 0px;
+	text-align: left;
+	border: 0px;
+	box-shadow: 0px;
+}
+.c-events ul li{
+	font-weight: bold;
+}
+.home{
+	position: relative;
+}
