@@ -11,13 +11,13 @@
  	
  </div>
 <div class="container">
-<h3><b>{{$post->topic}}</b></h3>
+<center><h3><b>{{$post->topic}}</b></h3></center>
 
-<p>{{$post->description}}</p>
+<center><p>{{$post->description}}</p></center>
 @if(!Auth::check())
-<button type="button" class="btn btn-default but"><a href="/login">APPLY</a></button>
-@elseif(Auth::check())
-<a href="/apply/{{$post->id}}"><button type="button" class="btn btn-default but">APPLY</button></a>
+<center><button type="button" class="btn btn-default but"><a href="/login">APPLY</a></button>
+@elseif(Auth::check())<center>
+<center><a href="/apply/{{$post->id}}"><button type="button" class="btn btn-default but">APPLY</button></a><center>
 @endif
 <div style="height: 10px;">
 	

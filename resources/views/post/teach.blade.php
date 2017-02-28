@@ -34,23 +34,18 @@
 									<label for="">CATEGORY</label>
 									<select name="category" id="input" class="form-control put" required="required">
 										<option >Select a Category</option>
-										<option value="Php">php</option>
-										<option value="Html">html</option>
-										<option value="Css">css</option>
-										<option value="Javascritp">javascript</option>
-										<option value="Bootstrap">bootstrap</option>
-										<option value="Java">java</option>
-										<option value="C++">c++</option>
+										<option value="Php">Php</option>
+										<option value="Html">Html</option>
+										<option value="Css">Css</option>
+										<option value="Javascritp">Javascript</option>
+										<option value="Bootstrap">Bootstrap</option>
+										<option value="Java">Java</option>
+										<option value="C++">C++</option>
 									</select>
 									<label for="">COUNTRIES</label>
 									<select id="country" name="country" class="form-control put">
 										<option >Select a Country</option>
-										<option value="Nigeria">Nigeria</option>
-										<option value="Kenya">Kenya</option>
-										<option value="Ghana">Ghana</option>
-										<option value="Southafrica">Southafrica</option>
-										<option value="Togo">Togo</option>
-										
+										<option value="Nigeria">Nigeria</option>	
 									</select>
 									<label for="">STATES</label>
 									<select name="state" id="state" class="form-control put">
@@ -58,8 +53,40 @@
 										<option value="Abuja">Abuja</option>
 										<option value="Abia">Abia</option>
 										<option value="Adamawa">Adamawa</option>
-										<option value="Akwaibom">Akwaibom</option>
+										<option value="Akwa Ibom">Akwa Ibom</option>
+										<option value="Anambra">Anambra</option>
+										<option value="Bauchi">Bauchi</option>
+										<option value="Bayelsa">Bayelsa</option>
+										<option value="Benue">Benue</option>
+										<option value="Borno">Borno</option>
+										<option value="Cross River">Cross River</option>
+										<option value="Delta">Delta</option>
+										<option value="Ebonyi">Ebonyi</option>
+										<option value="Edo">Edo</option>
+										<option value="Ekiti">Ekiti</option>
+										<option value="Enugu">Enugu</option>
+										<option value="Gombe">Gombe</option>
+										<option value="Imo">Imo</option>
+										<option value="Jigawa">Jigawa</option>
+										<option value="Kaduna">Kaduna</option>
+										<option value="Kano">Kano</option>
+										<option value="Katsina">Katsina</option>
+										<option value="Kebbi">Kebbi</option>
+										<option value="Kogi">Kogi</option>
+										<option value="Kwara">Kwara</option>
 										<option value="Lagos">Lagos</option>
+										<option value="Nasarawa">Nasarawa</option>
+										<option value="Niger">Niger</option>
+										<option value="Ogun">Ogun</option>
+										<option value="Ondo">Ondo</option>
+										<option value="Osun">Osun</option>
+										<option value="Oyo">Oyo</option>
+										<option value="Pleatu">Pleatu</option>
+										<option value="Sokoto">Sokoto</option>
+										<option value="Taraba">Taraba</option>
+										<option value="Yobe">Yobe</option>
+										<option value="Zamfara">Zamfara</option>
+									
 									</select>
 									<label for="">VENUE</label>
 									<input type="text" name="venue" id="input" class="form-control put" value="" required="required">

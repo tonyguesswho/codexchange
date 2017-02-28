@@ -4,6 +4,7 @@ namespace App;
 
 
 
+
 class Teachapply extends model
 {
      public function user()
@@ -18,4 +19,6 @@ class Teachapply extends model
    {
     	return $this->belongsTo(post::class);
     }
+
+
 }

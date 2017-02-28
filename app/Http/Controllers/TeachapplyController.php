@@ -22,7 +22,7 @@ class TeachapplyController extends Controller
     {
     	$post = Post::findorFail($id);
 
-    	$post->Teachapply()->save(new Teachapply(['user_id' => auth()->id()]));
+    	$post->Teachapply()->save(new Teachapply(['user_id' => Auth::id()]));
 
     		// Teachapply::create([
     		//  'user_id' => auth()->id(),
@@ -49,7 +49,7 @@ class TeachapplyController extends Controller
 	 {
    		$post = Teachapply::findorFail($id);
    		Teachapply::where( 'id', $post->id)->delete();
-   		return back();
+   		return back()->with('status', 'DELETED SUCESSFULLY!');
   	  }
 
 

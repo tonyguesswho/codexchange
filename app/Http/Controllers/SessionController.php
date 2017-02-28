@@ -4,13 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Auth\user;
+use App\User;
+use Auth;
 
 
 
 class sessionController extends Controller
 {
+    
+    
+     use AuthenticatesUsers;
+
+    protected $redirectTo = '/session';
+
+
 
     public function __construct()
     {
@@ -19,10 +28,18 @@ class sessionController extends Controller
     	$this->middleware('guest',['except' => 'destroy']);
     }
 
+
+    protected function redirectTo()
+    {
+        return '/session';
+    }
+
+
     public function create()
     {
     	return view('session.create');
     }
+
 
     public function store()
     {

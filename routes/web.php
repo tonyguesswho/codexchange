@@ -20,15 +20,15 @@
 
 Route::get('/login', 'sessionController@create');
 Route::post('/login', 'sessionController@store');
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
-Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
-
 Route::get('/logout', 'sessionController@destroy');
+
+Route::get('login/{provider}', 'FacebookController@redirectToProvider');
+Route::get('login/{provider}/callback', 'FacebookController@handleProviderCallback');
 
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
-
+Route::get('/terms', 'RegistrationController@terms');
 
 Route::get('/', 'postController@index');
 Route::get('/teach', 'postController@create');
@@ -48,4 +48,5 @@ Route::get('/apply/{apply}', 'TeachapplyController@store');
 Route::get('/dashboard', 'TeachapplyController@teach_apply');
 Route::get('/{delete}', 'TeachapplyController@destroy');
 Route::get('/dashboard/course/{apply}', 'TeachapplyController@view');
+
 

@@ -12,8 +12,8 @@
 <div style="height:60px;">
  	
  </div>
-  <div class"container">
-     <table class="table table-hover">
+  <div class="container">
+     <table class="table table-hover table-bordered">
          <thead>
              <tr>
                  <th>SESSIONS TO TEACH</th>
@@ -21,6 +21,7 @@
                  <th>TIME</th>
                 <th>VENUE</th>
                 <th>EDIT</th>
+                <th>APPLICANTS</th>
              </tr>
          </thead>
          <tbody>

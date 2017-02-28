@@ -8,6 +8,13 @@
                     </div>
                   </div>
                 </nav>
+                @if (session('status'))
+                <center>
+                    <div class="alert alert-success">
+                        <b>{{ session('status') }}</b>
+                    </div>
+                </center>
+                @endif
 
                 <div style="height: 50px;">
                     
@@ -46,7 +53,7 @@
                                             <div class="tab-content">
 
                                                 <div role="tabpanel" class="tab-pane active" id="home">
-                                                    <table class="table table-hover">
+                                                    <table class="table table-hover table-bordered">
                                                         <thead>
 
                                                             <tr>

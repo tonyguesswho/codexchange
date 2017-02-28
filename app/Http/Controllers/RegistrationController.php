@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Foundation\Auth\RegistersUsers;
 use App\User;
 
 class RegistrationController extends Controller
+
 {
+
+  use RegistersUsers;
+
+  protected $redirectTo = '/session';
+
    public function create(){
    	return view('register.create');
    }
@@ -38,5 +44,10 @@ class RegistrationController extends Controller
 
 
 
+   }
+
+   public function terms()
+   {
+      return view('post.terms');
    }
 }

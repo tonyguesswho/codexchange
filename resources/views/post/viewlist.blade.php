@@ -13,16 +13,16 @@
 <table class="container table-bordered table-responsive">
 <thead>
      <tr style="height: 40px;">
-         <th><b>NAME</b></th>
-         <th><b>EMAIL</b></th>
+         <th><b><center>NAME</center></b></th>
+         <th><b><center>EMAIL</center></b></th>
                                                                 
     </tr>
 </thead>
 <tbody>
 @foreach ($views as $view )
     <tr style="height: 40px;">
-        <td>{{$view->user->name}}</td>
-        <td>{{$view->user->email}}</td>                                                           
+        <td><center>{{$view->user->name}}</center></td>
+        <td><center>{{$view->user->email}}</center></td>                                                           
     </tr>
 @endforeach
 </tbody> 

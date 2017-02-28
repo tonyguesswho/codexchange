@@ -28,7 +28,7 @@
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" name="checkbox" value="" id="check">
-										I agree to codexchange <a href="#">Terms</a> and <a href="#">Condition</a>
+										I agree to codexchange <a href="/terms">Terms</a> and <a href="/terms">Condition</a>
 									</label>
 								</div>
 									<button type="submit" class="btn btn-primary but" name="Submit" disabled="disabled" id="submit">Submit</button>
@@ -50,7 +50,7 @@
 							</div>
 
 							<div class="col-md-12 twitter">
-									<button type="button" class="btn btn-default"><img src="img/twitter.png">Twitter</button>
+									<a href="login/twitter"><button type="button" class="btn btn-default"><img src="img/twitter.png">Twitter</button></a>
 									
 							</div>
 						</div>

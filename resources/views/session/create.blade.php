@@ -28,7 +28,7 @@
 						<h4>OR</h4>
 						<h3><b>LOG IN WITH</b></h3>
 						<a href="login/facebook"><img src="img/facebook.png"></a>
-						<a href=""><img src="img/twitter.png"></a>
+						<a href="login/twitter"><img src="img/twitter.png"></a>
 					</span>
 						
 						<p><input type="checkbox" value="">

@@ -25,7 +25,7 @@
 							<h5>CONTACT US</h5>
 							<p>No 10 Alara Street, Sabo Yaba Lagos</p>
 							<p>+23491000000</p>
-							<p>info@skillplus.com</p>
+							<p>info@codexchange.com</p>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 f-socials">
 							<ul>

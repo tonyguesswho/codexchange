@@ -42,7 +42,7 @@ class PostController extends Controller
         $posts = Post::where('topic','like', '%'.$search.'%' )
         ->orwhere('state','like', '%'.$search.'%')
         ->latest()
-        ->paginate(2);
+        ->paginate(5);
 
         return view('post.session', compact('posts'));
      }

@@ -40,4 +40,10 @@ return [
     'client_secret' => '6105450c141d4326d2c0d670cf91bfda',
     'redirect' => 'http://localhost:8000/login/facebook/callback',
     ],
+
+    'twitter' => [
+    'client_id' => 'C6QPTDfx3z2mmDnKVwL2TFNvC',
+    'client_secret' => 'TwTi8Pfa4tDcWi0W3DyvwzGw8RavLTjHVZhllZtairVYg9OydA',
+    'redirect' => 'http://localhost:8000/login/twitter/callback',
+    ],
 ];
