@@ -41,8 +41,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$("#apply").click(function(){
-		$(this).attr("disable", true);
+	$("#session_submit").click(function(){
+		$(this).attr("disabled", true);
 	})
 })
 

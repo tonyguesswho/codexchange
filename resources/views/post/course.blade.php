@@ -10,7 +10,13 @@
                 </nav>
 
 <div style="height:60px;">
- 	
+ 	@if (session('status'))
+        <center>
+             <div class="alert alert-success">
+                 <b>{{ session('status') }}</b>
+            </div>
+        </center>
+    @endif
  </div>
   <div class="container">
      <table class="table table-hover table-bordered">

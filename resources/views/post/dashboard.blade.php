@@ -75,7 +75,7 @@
                                                                 <td>{{$post->post->venue}}</td>
                                                                 <td>{{$post->post->state}}</td>
                                                                 <td>{{$post->post->country}}</td>
-                                                               <td><a href="{{$post->id}}" class="glyphicon glyphicon-trash"></a></td>
+                                                               <td><a href="{{$post->id}}" class="glyphicon-trash"></a></td>
 
                                                             </tr>
                                             			@endforeach

@@ -66,7 +66,7 @@
 										<h5>VENUE: {{$post->venue}} {{$post->state}} {{$post->country}}</h5>
 										<h5>DATE: {{$post->session_date}} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp TIME: {{$post->session_time}}</h5>
 										
-										<a href="/apply/{{$post->id}}"><button type="button" class="btn btn-default but">APPLY</button></a>
+										<a href="/apply/{{$post->id}}"><button type="button" id="session_submit" class="btn btn-default but" enabled="enabled">APPLY</button></a>
 										
 									<span>
 										<ul>

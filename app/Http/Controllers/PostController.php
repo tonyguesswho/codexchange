@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Input;
 use App\Teachapply;
 use App\Post;
 use Auth;
@@ -115,22 +115,36 @@ class PostController extends Controller
 
     public function update($id)
     {
-        $posts = Post::find($id);
-        Post::create([
+         $user   = Auth::user()->id;
+
+        // $id = Input::get('id');
+        $topic = Input::get('topic');
+        $category =  Input::get('category');
+        $country   = Input::get('country');
+        $state = Input::get('state');
+        $venue = Input::get('venue');
+        $session_date =Input::get('session_date');
+        $session_time =Input::get('session_time');
+        $gender = Input::get('gender');
+        $applicants = Input::get('applicants');
+        $description = Input::get('description');
+
+        //$posts = Post::find($id);
+        Post::where('id', $id)->update([
             'user_id' => auth()->id(),
-          'topic' => $posts->topic,
-         'category' => $posts->category,
-         'country' => $posts->country,
-         'state' => $posts->state,
-         'venue' =>  $posts->venue,
-         'session_date' => $posts->session_date,
-         'session_time' => $posts->session_time ,
-          'gender' => $posts->gender,
-          'applicants' => $posts->applicants,
-          'description' => $posts->description
+          'topic' => $topic,
+         'category' => $category,
+         'country' => $country,
+         'state' => $state,
+         'venue' =>  $venue,
+         'session_date' => $session_date,
+         'session_time' => $session_time ,
+          'gender' => $gender,
+          'applicants' => $applicants,
+          'description' => $description
         ]);
 
-        Session()->flash('message', 'Successfully updated!');
-        return redirect('/session');
+        
+        return redirect('/dashboard/course')->with('status', 'UPDATED SUCESSFULLY');
     }
 }
