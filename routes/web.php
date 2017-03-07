@@ -30,7 +30,7 @@ Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 Route::get('/terms', 'RegistrationController@terms');
 
-Route::get('/', 'PostController@index');
+//Route::get('/', 'PostController@index');
 
 Route::get('/teach', 'PostController@create');
 Route::get('/teach/{teach}', 'PostController@show');
