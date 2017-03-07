@@ -18,9 +18,9 @@
 //     return view('post.dashboard');
 // });
 
-Route::get('/login', 'sessionController@create');
-Route::post('/login', 'sessionController@store');
-Route::get('/logout', 'sessionController@destroy');
+Route::get('/login', 'SessionController@create');
+Route::post('/login', 'SessionController@store');
+Route::get('/logout', 'SessionController@destroy');
 
 Route::get('login/{provider}', 'FacebookController@redirectToProvider');
 Route::get('login/{provider}/callback', 'FacebookController@handleProviderCallback');
@@ -30,17 +30,17 @@ Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 Route::get('/terms', 'RegistrationController@terms');
 
-Route::get('/', 'postController@index');
+Route::get('/', 'PostController@index');
 
-Route::get('/teach', 'postController@create');
-Route::get('/teach/{teach}', 'postController@show');
-Route::post('/post', 'postController@store');
-Route::get('/session', 'postController@session');
-Route::get('/', 'postController@latest');
-Route::get('/search', 'postController@search');
-Route::get('/dashboard/course', 'postController@teach');
-Route::get('/dashboard/edit/{apply}', 'postController@edit');
-Route::post('/update/{apply}', 'postController@update');
+Route::get('/teach', 'PostController@create');
+Route::get('/teach/{teach}', 'PostController@show');
+Route::post('/post', 'PostController@store');
+Route::get('/session', 'PostController@session');
+Route::get('/', 'PostController@latest');
+Route::get('/search', 'PostController@search');
+Route::get('/dashboard/course', 'PostController@teach');
+Route::get('/dashboard/edit/{apply}', 'PostController@edit');
+Route::post('/update/{apply}', 'PostController@update');
 
 
 //Route::get('/{apply}', 'taachapplyController@store');
