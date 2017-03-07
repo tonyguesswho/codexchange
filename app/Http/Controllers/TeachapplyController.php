@@ -40,7 +40,7 @@ class TeachapplyController extends Controller
         
         $posts = Teachapply::where('user_id', Auth::user()->id)->latest()->paginate(10);
         
-        return view( 'post.dashboard', compact('posts'));
+        return view( 'post.dashboard', compact('posts'))->with('status', 'SESSIONS APPLIED!');
         
    		 }
    

@@ -28,7 +28,7 @@
 							<form action="/post" method="POST" role="form" class="tregform">
 							{{csrf_field()}}
 								
-									
+									<div class="form-group l-form">
 									<label for="">TOPIC</label>
 									<input type="text" class="form-control put" id="" placeholder="" name="topic">
 									<label for="">CATEGORY</label>
@@ -120,7 +120,8 @@
 							
 								
 							
-								<button type="submit" class="btn btn-primary but" name="submit">Submit</button>
+								<center><button type="submit" class="btn btn-primary but" name="submit">Submit</button></center>
+								</div>
 							</form>
 							@include('layout.error')
 						</div>

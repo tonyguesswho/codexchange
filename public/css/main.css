@@ -132,6 +132,7 @@ a{
 	padding-bottom: 20px;
 	width: 100%;
 	background-color: #e4e4e4;
+	margin:0 auto;
 	
 
 }
@@ -156,6 +157,7 @@ a{
 	padding: 0px;
 	position: relative;
 	margin-top: 5px;
+	
 }
 .grid-row .thumbnail img{
 	width: 100%;
@@ -293,6 +295,7 @@ a{
 	color: white;
 	padding-top: 3%;
 	padding-left: 30px;
+	margin:0 auto;
 }
 .f-list ul li{
 	display: block;
@@ -393,7 +396,7 @@ border: 1px solid gray;
 
 /**teacher reg*/
 .tregform {
-	margin-left: 35%;
+	margin:0 auto;
 	margin-bottom: 30px;
 	padding: 0px;
 	margin-top: 20px;

@@ -50,7 +50,7 @@
 										@if(!Auth::check())
 										<a href="/register"><b>{{'SIGN'.'UP'}}</b></a>
 										@elseif(Auth::check())
-										<a href="/logout"><b>{{Auth::user()->username}}</b></a>
+										<a href="#"><b>{{Auth::user()->username}}</b></a>
 										@endif
 									</li>
 								</ul>

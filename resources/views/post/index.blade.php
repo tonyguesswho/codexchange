@@ -166,7 +166,7 @@
 					</div>
 				</div>
 				
-				<div class="background">
+				<div class="background img-respons">
 					<div class="over_lay"></div>
 				</div>
 

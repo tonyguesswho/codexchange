@@ -31,6 +31,7 @@ Route::post('/register', 'RegistrationController@store');
 Route::get('/terms', 'RegistrationController@terms');
 
 Route::get('/', 'postController@index');
+
 Route::get('/teach', 'postController@create');
 Route::get('/teach/{teach}', 'postController@show');
 Route::post('/post', 'postController@store');
@@ -44,7 +45,7 @@ Route::post('/update/{apply}', 'postController@update');
 
 //Route::get('/{apply}', 'taachapplyController@store');
 Route::get('/apply/{apply}', 'TeachapplyController@store');
-
+Route::get('/home', 'TeachapplyController@teach_apply');
 Route::get('/dashboard', 'TeachapplyController@teach_apply');
 Route::get('/{delete}', 'TeachapplyController@destroy');
 Route::get('/dashboard/course/{apply}', 'TeachapplyController@view');

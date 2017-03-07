@@ -52,7 +52,7 @@ class sessionController extends Controller
     			])->withInput(Request()->except('user_id'));
     		}
 
-		return redirect('/session')->with('status', 'LOG IN SUCCESSFULL!');
+		return redirect()->intended('/session')->with('status', 'LOG IN SUCCESSFULL!');
 	}
    //this logs a user out
      public function destroy()

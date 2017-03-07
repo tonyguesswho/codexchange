@@ -29,7 +29,7 @@
                                             <li role="presentation" class="active"><a href="#session" aria-controls="#session" role="tab" data-toggle="tab">SESSION</a></li>
                                             <li role="presentation"><a href="/dashboard/course">TEACH</a></li>
                                             <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ACTIVE TEACHERS</a></li>
-                                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">SESSIONS CLOSE TO YOU</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -45,9 +45,9 @@
                                                 <li role="presentation" class="active">
                                                     <a href="#home" aria-controls="home" role="tab" data-toggle="tab">CURRENT</a>
                                                 </li>
-                                                <li role="presentation">
+                                                <!-- <li role="presentation">
                                                     <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">PREVIOUS</a>
-                                                </li>
+                                                </li> -->
 
                                             <!-- Tab panes -->
                                             <div class="tab-content">
@@ -83,35 +83,14 @@
                                                     </table>
                                                 </div>
                                                 
-                    <div class="text-center">
-                        {{$posts->links()}}
-                    </div>
-
-                                                <div role="tabpanel" class="tab-pane" id="tab">
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>SESSIONS ATTENDED</th>
-                                                                <th>DATE</th>
-                                                                <th>TIME</th>
-                                                                <th>VENUE</th>
-                                                                
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                    
                                             </div>
                                         </div> 
                                    </div>
 
-
+                    <div class="text-center">
+                        {{$posts->links()}}
+                    </div>
                                    <div role="tabpanel" class="tab-pane" id="teach">
                                     <div class="col-md-12">
                                       <!-- Nav tabs -->
