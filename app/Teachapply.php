@@ -5,7 +5,7 @@ namespace App;
 
 
 
-class Teachapply extends model
+class Teachapply extends Model
 {
      public function user()
 

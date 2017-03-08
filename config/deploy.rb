@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.6.1'
+# lock '3.6.1'
 
 set :application, 'codeexchange'
 set :repo_url, 'git@gitlab.com:collinsugwu1/codexchange2.git'
