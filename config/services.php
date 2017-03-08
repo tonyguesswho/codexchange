@@ -38,12 +38,12 @@ return [
     'facebook' => [
     'client_id' => '1914027108827216',
     'client_secret' => '6105450c141d4326d2c0d670cf91bfda',
-    'redirect' => 'http://localhost:8000/login/facebook/callback',
+    'redirect' => 'http://codexchange.switch.ng/login/facebook/callback',
     ],
 
     'twitter' => [
     'client_id' => 'C6QPTDfx3z2mmDnKVwL2TFNvC',
     'client_secret' => 'TwTi8Pfa4tDcWi0W3DyvwzGw8RavLTjHVZhllZtairVYg9OydA',
-    'redirect' => 'http://localhost:8000/login/twitter/callback',
+    'redirect' => 'http://codexchange.switch.ng/login/twitter/callback',
     ],
 ];
