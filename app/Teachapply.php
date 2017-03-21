@@ -7,17 +7,17 @@ namespace App;
 
 class Teachapply extends Model
 {
-     public function user()
+     public function User()
 
     {
-    	return $this->belongsTo(user::class);
+    	return $this->belongsTo(User::class);
     }
 
 
-   public function post()
+   public function Post()
 
    {
-    	return $this->belongsTo(post::class);
+    	return $this->belongsTo(Post::class);
     }
 
 
