@@ -28,15 +28,15 @@ class User extends Authenticatable
     ];
 
 
-    public function Posts()
+    public function Post()
     {
 
         return $this->hasMany(Post::class);
     }
 
-     public function Teachapplies()
+     public function Teachapply()
     {
 
-        return $this->hasMany(Teachapplies::class);
+        return $this->hasMany(Teachapply::class);
     }
 }
