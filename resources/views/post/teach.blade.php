@@ -21,11 +21,11 @@
 				    </form>
 				  </div>
 				</nav>
-
+				@include('layout.error')
 				<div class="container-fluid reg-body">
 					<div class="row">
 						<div class="col-md-12">
-							<form action="/post" method="POST" role="form" class="tregform">
+							<form action="/post" method="POST" role="form" class="tregform" name="tregform">
 							{{csrf_field()}}
 								
 									<div class="form-group l-form">
@@ -91,10 +91,10 @@
 									<label for="">VENUE</label>
 									<input type="text" name="venue" id="input" class="form-control put" value="" required="required">
 									<label for="">DATE</label>
-									<input type="date" name="session_date" id="input" class="form-control put" value="" required="required" title="">
+									<input type="date" name="session_date" id="input" class="form-control put" onload="validate();" value="" required="required" title=""><span id="timeerror" style="color: red;"> </span><br/>
 									<label for="">TIME</label>
 									<input type="time" name="session_time" id="input" class="form-control put" value="" required="required" title="">
-
+									
 									<label for="">GENDER</label>
 									<div class="radio">
 									
@@ -123,7 +123,7 @@
 								<center><button type="submit" class="btn btn-primary but" name="submit">Submit</button></center>
 								</div>
 							</form>
-							@include('layout.error')
+							
 						</div>
 					</div>
 				</div>

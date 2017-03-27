@@ -21,14 +21,13 @@
 				    </form>
 				  </div>
 				</nav>
-
+				@include('layout.error')
 				<div class="container-fluid reg-body">
 					<div class="row">
 						<div class="col-md-12">
+						<center>
 							<form action="/update/{{$posts->id}}" method="POST" role="form" class="tregform">
 							{{csrf_field()}}
-								
-									
 									<label for="">TOPIC</label>
 									<input type="text" class="form-control put" id="" placeholder="" name="topic" value="{{ old('topic', $posts->topic) }}">
 									<label for="">CATEGORY</label>
@@ -88,14 +87,10 @@
 									<input type="number" name="applicants" id="input" class="form-control put" value="{{ old('category', $posts->applicants) }}" required="required">
 											<label for="">FULL DESCRIPTION</label>
 									<textarea name="description" id="inputTextarea" class="form-control" rows="3" required="required" cols="50" rows="10">{{ old('category', $posts->description) }}</textarea>
-							
-								
-							
-								
-							
+					
 								<button type="submit" class="btn btn-primary but" name="submit">Submit</button>
 							</form>
-							@include('layout.error')
+						 </center>
 						</div>
 					</div>
 				</div>

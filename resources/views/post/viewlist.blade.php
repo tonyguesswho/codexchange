@@ -15,14 +15,15 @@
      <tr style="height: 40px;">
          <th><b><center>NAME</center></b></th>
          <th><b><center>EMAIL</center></b></th>
-                                                                
+         <th><b><center>SEND REMINDER</center></b></th>                                                      
     </tr>
 </thead>
 <tbody>
 @foreach ($views as $view )
     <tr style="height: 40px;">
         <td><center>{{$view->user->name}}</center></td>
-        <td><center>{{$view->user->email}}</center></td>                                                           
+        <td><center>{{$view->user->email}}</center></td>
+        <td><center><a href="/email/{{$view->user->id}}"><p>send mail</p></a></center></td>                                                             
     </tr>
 @endforeach
 </tbody> 

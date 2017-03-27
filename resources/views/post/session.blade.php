@@ -39,21 +39,18 @@
 				@include('layout.error')
 				<div class="container-fluid events">
 					<div class="row">
-						<div class="col-md-3">
-							<div class="row c-events">
-								<div class="col-md-12 thumbnail">
-									<ul class="nav nav-tabs nav-stacked text-center" role="tablist">
-						                <li role="presentation" class="active"><a href="#allevents" aria-controls="allevents" role="tab" data-toggle="tab">ALL SESSIONS</a></li>
-						                <li role="presentation"><a href="" aria-controls="" role="tab" data-toggle="tab">TRENDING</a></li>
-						                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ACTIVE TEACHERS</a></li>
-						                
-						            </ul>
-												
-								</div>
-								
-							</div>
-							
-						</div>
+						 <div class="col-md-3">
+                                <div class="row c-events">
+                                    <div class="col-md-12 side_barlist thumbnail">
+                                        <ul class="nav nav-tabs nav-stacked" role="tablist">
+                                            <li role="presentation" class="active"><a href="#session" aria-controls="#session" role="tab" data-toggle="tab">SESSION</a></li>
+                                            <li role="presentation"><a href="#">TREANDING</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 						<div class="col-md-9">
 							<div class="row tab-content">
 								<div role="tabpanel" class="tab-pane fade active in" id="allevents">
@@ -70,15 +67,14 @@
 										
 									<span>
 										<ul>
-											<li><a href="facebook.com"><img src="img/facebook.png"></a></li>
-											<li><a href="twitter.com"><img src="img/twitter.png"></a></li>
+											<li><a href="/social"><img src="img/facebook.png"></a></li>
+											<li><a href="/social/{{$post->id}}"><img src="img/twitter.png"></a></li>
 										</ul>
 									</span>
 								</div>
 								@endforeach
 									
 								
-						  	<div role="tabpanel" class="tab-pane fade" id="messages">
 			                   
 			                </div>
 						</div>

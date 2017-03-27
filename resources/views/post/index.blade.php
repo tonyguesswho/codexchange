@@ -90,55 +90,55 @@
 				<h2 id="event">SESSIONS</h2>
 					<div class="row grid-row text-center">
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-						<a href="">
+						
 							<img src="img/html.png">
 								<div class="grid-div">
 								<p class="grid-text">&lt; html /&gt;</p>
 							</div>
-						</a>
+						
 						</div>
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-							<a href="">
+							
 								<img src="img/css.jpeg">
 								<div class="grid-div">
 									<p class="grid-text">{css}</p>
 								
 								</div>
-							</a>
+							
 						</div>
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-							<a href="">
+							
 								<img src="img/php.jpeg">
 								<div class="grid-div">
 									<p class="grid-text">&lt;? php ?&gt;</p>
 								
 								</div>
-							</a>
+							
 						</div>
 					
 					
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-							<a href="">
+							
 								<img src="img/javasc.jpeg">
 								<div class="grid-div">
 									<p class="grid-text">Javascript</p>
 								</div>
-							</a>
+							
 						</div>
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-							<a href="">
+							
 								<img src="img/c.jpeg">
 								<div class="grid-div">
 									<p class="grid-text">c++</p>
 								</div>
-							</a>
+							
 						</div>
 						<div class="thumbnail col-xs-6 col-sm-6 col-md-4 col-lg- grid">
-							<a href="#"><img src="img/java.png">
+							<img src="img/java.png">
 								<div class="grid-div">
 									<p class="grid-text">Java</p>
 								</div>
-								</a>
+								
 						</div>
 
 					</div>

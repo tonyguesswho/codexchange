@@ -27,9 +27,7 @@
                                     <div class="col-md-12 side_barlist thumbnail">
                                         <ul class="nav nav-tabs nav-stacked" role="tablist">
                                             <li role="presentation" class="active"><a href="#session" aria-controls="#session" role="tab" data-toggle="tab">SESSION</a></li>
-                                            <li role="presentation"><a href="/dashboard/course">TEACH</a></li>
-                                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ACTIVE TEACHERS</a></li>
-                                            
+                                            <li role="presentation"><a href="/dashboard/course">TEACH</a></li> 
                                         </ul>
                                     </div>
                                 </div>
@@ -68,17 +66,35 @@
                                                         </thead>
                                                         <tbody>
                                                         @foreach($posts as $post)
-                                             				<tr>
+
+
+                                                            <tr>
                                                                 <td>{{$post->post->topic}}</td>
                                                                 <td>{{$post->post->session_date}}</td>
                                                                 <td>{{$post->post->session_time}}</td>
                                                                 <td>{{$post->post->venue}}</td>
                                                                 <td>{{$post->post->state}}</td>
                                                                 <td>{{$post->post->country}}</td>
-                                                               <td><a href="{{$post->id}}" class="glyphicon-trash"></a></td>
+                                                               <td><a class="btn btn-primary" data-toggle="modal" data-target='#modal-id-{{$post->id}}' class="glyphicon-trash"></a></td>
 
                                                             </tr>
-                                            			@endforeach
+                                                        <div class="text-center">
+                                                            <div class="modal fade" id="modal-id-{{$post->id}}">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-body">
+                                                                            Do you want to delete session?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                            <a href="{{$post->id}}"><button type="button" class="btn btn-primary">DELETE</button></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                        
+                                                        @endforeach
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -87,68 +103,10 @@
                                             </div>
                                         </div> 
                                    </div>
-
-                    <div class="text-center">
-                        {{$posts->links()}}
-                    </div>
-                                   <div role="tabpanel" class="tab-pane" id="teach">
-                                    <div class="col-md-12">
-                                      <!-- Nav tabs -->
-                                         <ul class="nav nav-tabs" role="tablist">
-                                                <li role="presentation" class="active in">
-                                                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">CURRENT</a>
-                                                </li>
-                                                <li role="presentation">
-                                                    <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">PREVIOUS</a>
-                                                </li>
-                                         </ul>
-                                       
-                                            <!-- Tab panes -->
-                                            <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active" id="home">
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>SESSIONS TO TEACH</th>
-                                                                <th>DATE</th>
-                                                                <th>TIME</th>
-                                                                <th>VENUE</th>
-                                                                <th>EDIT</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                       
-                                                            
-                                                        </tbody> 
-                                                    </table>
-                                                </div>
-                                                   
-                                        
-                                                <div role="tabpanel" class="tab-pane" id="">
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>SESSIONS ATTENDED</th>
-                                                                <th>DATE</th>
-                                                                <th>TIME</th>
-                                                                <th>VENUE</th>
-                                                                
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                                <td>4</td>
-                                                                
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
+                      <center>{{$posts->links()}}</center>  
+                    
+                                   
                                 </div>
                             </div>
                         </div>

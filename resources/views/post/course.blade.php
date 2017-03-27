@@ -10,7 +10,7 @@
                 </nav>
 
 <div style="height:60px;">
- 	@if (session('status'))
+    @if (session('status'))
         <center>
              <div class="alert alert-success">
                  <b>{{ session('status') }}</b>
@@ -38,7 +38,7 @@
                  <td>{{$teachs->session_date}}</td>
                  <td>{{$teachs->session_time}}</td>
                  <td>{{$teachs->venue}}</td>
-       			<td><a href="/dashboard/edit/{{$teachs->id}}" class="glyphicon-pencil"></a></td>
+                <td><a href="/dashboard/edit/{{$teachs->id}}" class="glyphicon-pencil"></a></td>
                  <td><a href="/dashboard/course/{{$teachs->id}}">VIEW</a></td>
              </tr>
          @endforeach
@@ -46,12 +46,12 @@
      </table>
  </div>
 
-	<div class="text-center">
-		{{$teach->links()}}
-	</div>
+    <div class="text-center">
+        {{$teach->links()}}
+    </div>
 
 
  <div style="height:165px;">
- 	
+    
  </div>
  @endsection
