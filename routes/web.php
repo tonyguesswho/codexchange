@@ -41,6 +41,7 @@ Route::get('/search', 'PostController@search');
 Route::get('/dashboard/course', 'PostController@teach');
 Route::get('/dashboard/edit/{apply}', 'PostController@edit');
 Route::post('/update/{apply}', 'PostController@update');
+Route::get('/email/{email}', 'PostController@mail');
 
 
 //Route::get('/{apply}', 'taachapplyController@store');

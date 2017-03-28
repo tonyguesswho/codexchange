@@ -1,6 +1,6 @@
 	<footer id="footer" class="container-fluid">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 foot">
 						<div class="f-list col-md-3 col-sm-6">
 							<ul>
 								<li><a href="">Go to Top</a></li>
@@ -19,7 +19,7 @@
 								<input type="text" name="text" id="input" class="form-control" value="" required="required" placeholder="Name">
 								<input type="email" name="emil" id="input" class="form-control" value="" required="required" placeholder="Email">
 								<textarea name="textarea" id="inputTextarea" class="form-control" rows="3" required="required" placeholder="Message"></textarea>
-								<button type="button" class="btn btn-default but">SUBMIT</button>
+								<button type="button" class="btn btn-default but f-but">SUBMIT</button>
 							</form>
 						</div>
 						<div class="col-md-3 col-sm-6">
