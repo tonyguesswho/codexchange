@@ -15,7 +15,7 @@ use App\User;
 use App\Post;
 use Auth;
 use App\Mail\applied;
-use Illuminate\Support\Facades\Mail;
+
 
 class PostController extends Controller
 {  
