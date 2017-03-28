@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Chencha\Share\ShareFacade;
 use Carbon;
-//use Mail;
+use Mail;
 use App\Mail\Reminder;
+use App\Mail\ReminderUser;
 use App\Teachapply;
 use App\User;
 use App\Post;
@@ -186,19 +187,19 @@ class PostController extends Controller
         return redirect('/dashboard/course')->with('status', 'UPDATED SUCESSFULLY');
     }
 
-    public function mail(Request $request)
+    public function mail($id)
     {           
-            
+            $user = User::find($id);
+            Mail::to('collins@switch.ng')->send(new RemindUser);
+
+
             // $posts = User::where('id', $id)->get();
             // $user_email = $posts->pluck('email');
            // $user = User::find($id);
            // Mail::to('anthonyu234@gmail.com')->send(new applied());
-            Mail::send('mails.applied_email',['title','yes'],function($message){
-               $message->from('me@gmail.com', 'Christian Nwamba');
+            
 
-              $message->to('chrisn@scotch.io');
-
-            });
+            
 
                // Mail::send('post.active', compact('posts'), function($message) use($posts)
                // {
